@@ -1,6 +1,12 @@
 <h1 align="center">Automated NFT generator 🤖👨🏻‍💻</h1>
 <h2 align="center">version-1️⃣.0️⃣.0️⃣</h2>
-This repo contains a small project i've done using PILLOW module in python. I wrote an automated script which generates more than 5k+ unique nfts with 0 hassle in less time.
+This repo contains a mini side project i've done using <b>PILLOW module</b> in python. I wrote an automated script which generates thousands unique nfts with 0 hassle in less time.
+
+## So what is an NFT afterall?
+==> NFT stands for Non-Fungible Token.Something that is "fungible" can be exchanged with an equivalent item.NFTs are digital items that can be bought and sold using this blockchain technology. But they are not fungible, making them a different type of asset.Like cryptocurrencies, NFTs are bought and sold on specialised platforms. OpenSea is the best-known NFT marketplace. As technology is rapidly growing many old methodologies are also changing, take crypto currency as an example, that might replace traditional paper money some time in future, NFT'S are one such kind which are very much hyped in 2022.
+
+So..i've decided to make my own version of nft but i'm too lazy to draw , so i made an automated script which does all the hard work for me.
+<hr style="border:10px solid grey"> </hr>
 
 Intially i've choosen a random photo of my fav character Rick from series rick & morty, then i divided that photo into different layers using free online photo editing software <a href="https://www.photopea.com/">Photopea</a> (u can find them in misc dir).
 <br><p align="center"><img src="preview/preview-2.gif" align="center"></p>
