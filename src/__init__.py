@@ -11,7 +11,7 @@ def generate_layers():
         b=int(random.randint(0,255))
         img = Image.new('RGB',(1280,720),(r,g,b))
         # saving the final produced background
-        img.save('background/bg{}.png'.format(i))
+        img.save('Layers/background/bg{}.png'.format(i))
         
     ls=['body','eyes','face','hair']
     
@@ -22,7 +22,7 @@ def generate_layers():
      which are then saved into their respective folder.
     '''
     def convertImage(i,j):
-        img = Image.open("{}/{}{}.png".format(j,j,i))
+        img = Image.open("Layers/{}/{}{}.png".format(j,j,i))
         img = img.convert("RGBA")
         datas = img.getdata() # gathering color scheme of img
         newData = []
@@ -32,7 +32,7 @@ def generate_layers():
             else:
                 newData.append(item)
         img.putdata(newData) # updating new pixel information into the img
-        img.save("{}/{}{}.png".format(j,j,i)) #saving the final bg removed transparent img
+        img.save("Layers/{}/{}{}.png".format(j,j,i)) #saving the final bg removed transparent img
 
     
     # driver code to generate different colors for layers
@@ -45,7 +45,7 @@ def generate_layers():
     '''
     for j in ls:
         for i in range(6):
-            img = Image.open("{}/{}.png".format(j,j))
+            img = Image.open("Layers/{}/{}.png".format(j,j))
             img = img.convert("RGB")
             d = img.getdata()
             r=int(random.randint(0,255))
@@ -58,7 +58,7 @@ def generate_layers():
                 else:
                     new_image.append(item)
             img.putdata(new_image)
-            img.save("{}/{}{}.png".format(j,j,i))
+            img.save("Layers/{}/{}{}.png".format(j,j,i))
             '''
              all the colored layers generated here doesnt have transparent bg
              to make them transparent, they are sent to another function 
@@ -79,12 +79,12 @@ def generate_nft():
                         '''
                         opening layer one by one respectievely
                         '''
-                        bg=Image.open(("background/bg{}.png".format(e))).convert("RGBA")
-                        body=Image.open(("body/body{}.png".format(b))).convert("RGBA")
-                        eyes=Image.open(("eyes/eyes{}.png".format(c))).convert("RGBA")
-                        face=Image.open(("face/face{}.png".format(d))).convert("RGBA")
-                        hair=Image.open(("hair/hair{}.png".format(a))).convert("RGBA")
-                        text=Image.open(("text/text.png")).convert("RGBA")
+                        bg=Image.open(("Layers/background/bg{}.png".format(e))).convert("RGBA")
+                        body=Image.open(("Layers/body/body{}.png".format(b))).convert("RGBA")
+                        eyes=Image.open(("Layers/eyes/eyes{}.png".format(c))).convert("RGBA")
+                        face=Image.open(("Layers/face/face{}.png".format(d))).convert("RGBA")
+                        hair=Image.open(("Layers/hair/hair{}.png".format(a))).convert("RGBA")
+                        text=Image.open(("Layers/text/text.png")).convert("RGBA")
                         '''
                          layering each layer on one another
                          to make a single nft
