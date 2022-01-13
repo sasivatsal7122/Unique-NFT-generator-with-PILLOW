@@ -2,7 +2,7 @@
 <h2 align="center">version-1️⃣.0️⃣.0️⃣</h2>
 This repo contains a mini side project i've done using <b>PILLOW module</b> in python. I wrote an automated script which generates thousands unique nfts with 0 hassle in less time.
 
-## So what is an NFT afterall?
+## So what is a NFT afterall?
 ==> NFT stands for Non-Fungible Token.Something that is "fungible" can be exchanged with an equivalent item.NFTs are digital items that can be bought and sold using this blockchain technology. But they are not fungible, making them a different type of asset.Like cryptocurrencies, NFTs are bought and sold on specialised platforms. OpenSea is the best-known NFT marketplace. As technology is rapidly growing many old methodologies are also changing, take crypto currency as an example, that might replace traditional paper money some time in future, NFT'S are one such kind which are very much hyped in 2022.
 
 So..i've decided to make my own version of nft but i'm too lazy to draw , so i made an automated script which does all the hard work for me.
@@ -36,6 +36,6 @@ This is a collage of few hundread generated nfts
 --> u can specify no.of nft's u wanted to create, execution time is also relatively faster.
 
 note: 
---> Under GPL-3.0 license you are eligible to use the code how ever you want, by do not copy paste this a you're work/project anywehere , if done so it leads to copyright violation,you can avoid it by giving credit to me by linking this repo.
+--> Under GPL-3.0 license you are eligible to use the code how ever you want, but do not copy paste this a you're work/project anywhere , if done so it leads to copyright violation,you can avoid it by giving credit to me by linking this repo.
 
-that begin said.....are NFT'S really future of digital currency ?!..idk....
+## that begin said.....are NFT'S really future of digital currency ?!..idk....
