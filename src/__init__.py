@@ -1,5 +1,23 @@
 from PIL import Image
 import random
+import os
+
+
+# name all you're sub folders in Layers here
+ls=['body','eye','face','hair']
+
+
+# DRIVER CODE FOR DELETING OLD IMAGES
+# USEFUL FOR TESTING 
+def clean():
+       print("Cleaining intiated........")
+       for i in ls:
+        c=0
+        for j in os.listdir("Layers/{}/".format(str(i))):
+            c+=1
+            if c>1:
+                os.remove("Layers/{}/{}".format(str(i),j))
+        print("done cleaning {} folder...".format(str(i)))
 
 def generate_layers():
     
@@ -13,7 +31,6 @@ def generate_layers():
         # saving the final produced background
         img.save('Layers/background/bg{}.png'.format(i))
         
-    ls=['body','eyes','face','hair']
     
     # driver code to remove background
     '''
@@ -44,6 +61,9 @@ def generate_layers():
      version of it are created with number extensions
     '''
     for j in ls:
+        print("======================")
+        print("Generating Layers in {}".format(j))
+        # change range to 'n' to create n diff colored layers
         for i in range(6):
             img = Image.open("Layers/{}/{}.png".format(j,j))
             img = img.convert("RGB")
@@ -65,6 +85,8 @@ def generate_layers():
              convertImage()
             '''
             convertImage(i,j)
+        print("Completed Generating Layers in {}".format(j))
+        
 
 '''
 In this function all the layers are stacked on each other creating different combinations
@@ -98,6 +120,7 @@ def generate_nft():
                         bg.save("result/nft-{}+{}+{}+{}+{}.png".format(a,b,c,d,e))
 
 if __name__=='__main__':
+    clean()
     generate_layers()
     generate_nft()
     
