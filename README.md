@@ -31,9 +31,9 @@ This is a collage of few hundread generated nfts
 
 ## Notes:
 ### What makes this script standout from rest :
-- Almost everything is done autonomously leading near to no work\
-- In other automated scripts everything including different colored layers must be prepared before hand which is a lot of hard work, in this script all u have to do is create 'n' folders for you're 'n' layers and place source layer with same folder name in it's respective folder, colored layers with transparent bg's are prepared and saved automatically.\
-- u can specify no.of nft's u wanted to create, execution time is also relatively faster.\
+- Almost everything is done autonomously leading near to no work
+- In other automated scripts everything including different colored layers must be prepared before hand which is a lot of hard work, in this script all u have to do is create 'n' folders for you're 'n' layers and place source layer with same folder name in it's respective folder, colored layers with transparent bg's are prepared and saved automatically.
+- u can specify no.of nft's u wanted to create, execution time is also relatively faster.
 - with newly added clean() user can delete all the previous layers if he isn't satisfied with click of a button, Clean() deletes all the previous layers in each sub folder leaving the original source layer intact
 #### clean() demo:
 <p align="center"><img src="preview/clean-preview.gif" align="center"></p>
